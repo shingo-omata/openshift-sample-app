@@ -1,10 +1,10 @@
-from flask import Flask # flaskƒpƒbƒP[ƒW‚ÌŒÄ‚Ño‚µ
+from flask import Flask # flaskãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®å‘¼ã³å‡ºã—
 
-app = Flask(__name__) # ‚¨‚Ü‚¶‚È‚¢BFlask‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ð¶¬‚µ‚Ä‚¢‚é 
+app = Flask(__name__) # ãŠã¾ã˜ãªã„ã€‚Flaskã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¦ã„ã‚‹ 
 
-@app.route("/") # ƒuƒ‰ƒEƒU‚©‚çƒAƒNƒZƒX‚ª‚ ‚Á‚½Žž‚ÉŽÀs‚·‚éˆ—‚ð‘‚¢‚Ä‚¢‚éBƒ‹[ƒg‚ÉƒAƒNƒZƒX‚·‚é‚ÆhelloƒAƒNƒVƒ‡ƒ“‚ªŒÄ‚Ño‚³‚ê‚ÄAhello Flask!‚ð‚¢‚¤•¶Žš—ñ‚ð•Ô‚·B
+@app.route("/") # ãƒ–ãƒ©ã‚¦ã‚¶ã‹ã‚‰ã‚¢ã‚¯ã‚»ã‚¹ãŒã‚ã£ãŸæ™‚ã«å®Ÿè¡Œã™ã‚‹å‡¦ç†ã‚’æ›¸ã„ã¦ã„ã‚‹ã€‚ãƒ«ãƒ¼ãƒˆã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã¨helloã‚¢ã‚¯ã‚·ãƒ§ãƒ³ãŒå‘¼ã³å‡ºã•ã‚Œã¦ã€hello Flask!ã‚’ã„ã†æ–‡å­—åˆ—ã‚’è¿”ã™ã€‚
 def hello():
     return "Hello Flask! "
 
-if __name__ == "__main__":# ‚±‚ê‚àŒˆ‚Ü‚Á‚½‘‚«•û‚ç‚µ‚¢B
+if __name__ == "__main__":# ã“ã‚Œã‚‚æ±ºã¾ã£ãŸæ›¸ãæ–¹ã‚‰ã—ã„ã€‚
     app.run(host = '0.0.0.0', port = 5000)
